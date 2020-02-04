@@ -1,4 +1,4 @@
-image: Ubuntu1804
+image: Visual Studio 2015
 
 branches:
   only:
@@ -14,4 +14,4 @@ build_script:
   - ps: ./gradlew test --info "-Dselenide.headless=true"
 
 on_finish:
-  - ps: Stop-Process -Id $App.Id  
+  - ps: Stop-Process -Id $App.Id
